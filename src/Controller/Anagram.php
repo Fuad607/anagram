@@ -5,13 +5,13 @@ namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class Anagram extends AbstractController
+class Anagram extends AbstractController implements AnagramInterface
 {
     /**
      * Factorise word
      *
      * @param $word
-     * @return int
+     * @return float
      */
     public function factorise($word): float
     {
@@ -48,7 +48,7 @@ class Anagram extends AbstractController
         $file = file_get_contents(__DIR__ . '/../../assets/resources/english_58000_lowercase.txt');
 
         $dict = explode("\n", $file);
-
+        $wordResults=[];
         foreach ($dict as $thisWord) {
             $dictWordFactor = $this->factorise($thisWord);
 

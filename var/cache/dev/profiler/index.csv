@@ -121,3 +121,5 @@ d166a0,::1,POST,http://localhost:8000/anagram,1654094533,,500
 8cb04d,::1,POST,http://localhost:8000/anagram,1654095291,,200
 1082a1,::1,POST,http://localhost:8000/anagram,1654095301,,200
 78d280,::1,POST,http://localhost:8000/anagram,1654095308,,200
+77a83a,::1,GET,http://localhost:8000/anagram,1654256670,,200
+1f5a81,::1,POST,http://localhost:8000/anagram,1654256678,,200
